@@ -54,7 +54,6 @@ module.exports  = function(data) {
     let day = date.getDate();
     obj.unix = date.getTime();
     obj.natural = isNaN(obj.unix) ? null : month + ' ' + day + ', ' + year;
-    console.log(obj.unix);
   }
  
   return JSON.stringify(obj);
